@@ -1,7 +1,9 @@
 '''
 Downloads all links as files from a specified page and saves them to the
-folder of this program.
+folder of this program, assuming all links are valid
 '''
+
+#TO DO: add error catching for invalid links
 
 
 from bs4 import BeautifulSoup
