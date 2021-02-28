@@ -9,11 +9,15 @@ folder of this program, assuming all links are valid
 from bs4 import BeautifulSoup
 import requests, time, os
 
+#Reset $html.txt file
+DELETE = False
+#file types wanted
+FILE_TYPES = [".txt", ".csv", ".pdf", ".jpg", ".png"]
+#link similarities
+TARGET_SPECS = "" 
+#URL of page to download from
+url = "https://app.lms.unimelb.edu.au/webapps/blackboard/content/listContent.jsp?course_id=_391669_1&content_id=_7221513_1"
 
-DELETE = True #Reset $html.txt file
-FILE_TYPES = [".txt", ".csv", ".pdf", ".jpg", ".png"] #file types wanted
-TARGET_SPECS = "" #link similarities
-url = "" #URL of page to download from
 
 def findnth(substr, string, n):
     index = 0
